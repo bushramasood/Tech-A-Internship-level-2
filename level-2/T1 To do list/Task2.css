@@ -1,0 +1,99 @@
+body {
+    font-family: sans-serif;
+    display:flex;
+    justify-content:left;
+    align-items:left;
+    background-image: url('todo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    padding: 30px 50px;
+}
+
+h2 {
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    font-size: 1.75em;
+}
+
+#inputbox {
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 0 15px 15px;
+    border-radius: 30px;
+    font-size: 1em;
+}
+
+#list li {
+    position: relative;
+    display: flex;
+    align-items: left;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border: 2px solid lightgray;
+}
+
+.checkbox {
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete {
+    margin-left: auto;
+    cursor: pointer;
+    color: red;
+}
+
+@media (max-width:768px)
+{
+body {
+    display: block; /* Change from flex to block for better mobile layout */
+    text-align: left;
+    padding: 10px;
+}
+
+ .box 
+ {
+    width: 100%; /* Full width on mobile screens */
+    padding: 15px;
+}
+
+h2 {
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#inputbox {
+    width: 50%;
+    align-items: left;
+}
+
+#list li {
+    display: block;
+    padding: 10px;
+    width: 40%;
+    align-items: left;
+}
+.checkbox {
+    margin-right: 5px;
+}
+
+.delete {
+    margin-left:20px;
+}
+}
